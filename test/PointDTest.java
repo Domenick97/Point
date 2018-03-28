@@ -1,13 +1,15 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 import org.junit.jupiter.api.Test;
 
-class PointTest {
+
+
+class PointDTest {
 
 	@Test
 	void testPoint() {
-		Point p1 = new Point();
-		assertTrue(p1 instanceof Point);
+		PointD p1 = new PointD();
+		assertTrue(p1 instanceof PointD);
 		assertEquals(0, p1.getX());
 		assertEquals(0, p1.getY());
 	}

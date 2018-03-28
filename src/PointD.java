@@ -6,10 +6,10 @@ import java.io.Serializable;
  * @author Domenick DiBiase
  *
  */
-public class Point implements Serializable {
+public class PointD implements Serializable {
 
 	/** The serial version ID */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 2L;
 	/** X coordinate of the point object */
 	private double x;
 	/** Y coordinate of the point object */
@@ -18,7 +18,7 @@ public class Point implements Serializable {
 	/**
 	 * Constructor that initializes the coordinates to 0
 	 */
-	public Point() {
+	public PointD() {
 		this.x = 0;
 		this.y = 0;
 	}
@@ -31,7 +31,7 @@ public class Point implements Serializable {
 	 * @param y
 	 *            value for the y coordinate
 	 */
-	public Point(double x, double y) {
+	public PointD(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -41,7 +41,7 @@ public class Point implements Serializable {
 	 * 
 	 * @param other
 	 */
-	public Point(Point other) {
+	public PointD(PointD other) {
 		if (other == null) {
 			this.x = 0;
 			this.y = 0;
